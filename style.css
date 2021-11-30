@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 html {
     box-sizing: border-box;
 }
@@ -5,59 +7,351 @@ html {
 body {
     margin: 0;
     min-height:  100vh;
-    background: rgb(191, 220, 250);
-}
-
-#body {
-    background: rgb(64, 124, 213);
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
-
-.eyes{
-    position: relative;
-    top: 30px;
+    background-color: #f6f6f6;
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%230397f9' fill-opacity='0.13' fill-rule='evenodd'/%3E%3C/svg%3E");
+    color: black;
+    font-family: Rubik, sans-serif;
+    font-weight: 600;
+    text-align: center;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* 
+.quote-container {
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-.eye{
-    background-color: floralwhite;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin: 25px;
-    position: relative;
+.quote-text {
+    font-size: 2.75rem;
 }
 
-.pupils{
-    background-color: black;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
+.long-quote {
+    font-size: 2rem;
+}
+
+.fa-quote-left {
+    font-size: 4rem;
+}
+
+.quote-author {
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: #E8E8E8;
+    background: #212121;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0rem 0.3rem rgba(109, 163, 182, 0.65);
+}
+
+button:hover {
+    filter: brightness(140%);
+}
+
+button:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+    color: #38a1f3;
+}
+
+.fa-twitter {
+    font-size: 1.5rem;
+} */
+
+.cartoon {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vmin;
+    height: 80vmin;
 }
 
-.ears{
-    position: relative;
+.cartoon div {
+    position: absolute;
+    box-sizing: border-box;
+}
+    
+.b {
+    border: 0.5vmin solid;
 }
 
-.ear{
+.r {
+    border-radius: 100%;
+}
+
+.hb::before,
+.ha::after {
+content: "";
+display: block;
+position: absolute;
+box-sizing: border-box;
+}
+
+/****/
+.cartoon {
+    --fur: #222;
+    --skin: #e3e3e0;
+    --nose: #c00;
+    --shirt: rgb(186, 234, 249);
+    --pants: #6edbfc;
+}
+
+.head {
+    width: 32%;
+    height: 32%;
+    background: var(--skin);
+    border-radius: 50%;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: inset 0 12vmin 0 2vmin var(--fur);
+}
+
+.head::before {
+    width: 110%;
+    height: 38%;
+    background: var(--skin);
+    border-radius: 50%;
+    bottom: 0%;
+    left: -5%;
+}
+
+.eye {
+    width: 28%;
+    height: 32%;
+    background: var(--skin);
+    top: 20%;
+    left: 25%;
+    box-shadow: 5.66vmin 0 var(--skin);
+}
+.eye::after {
+    width: 3vmin;
+    height: 3vmin;
+    background: var(--skin);
+    box-shadow: inset 0.75vmin -0.75vmin 0 1vmin var(--fur), 6.75vmin -0.75vmin 0 -1vmin var(--skin), 6vmin 0 var(--fur);
+    border-radius: 50%;
+    top: 58%;
+    left: 6%;
+    transform: translate(90%, -75%);
+}
+
+.nose{
+    /* border-radius:50px 50px 50px 50px / 100px 100px 50px 50px; */
+    border-radius: 50% 50% 50% 50% / 100% 100% 50% 50%;
+    width: 10%;
+    height: 10%;
+    background: var(--nose);
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.mouth{
+	width: 55%;
+    height: 25%;
+	top: 78%;
+	left: 48%;
+	margin-left: -25%;
+	z-index: 2;
+	overflow: hidden;
+    transform: translate(0%, -10%);
+}
+
+.mouth:before{
+	content: "";
+	display: block;
+	left: -4%;
+	bottom: 60%;
+    position: absolute;
+	width: 50%;
+	height: 70%;
+	border-radius: 50%;
+    border: 2px solid #000;
+}
+
+.mouth:after{
+	content: "";
+	display: block;
+	position: absolute;
+    left: 48%;
+	bottom: 60%;
+	border: 2px solid #000;
+	width: 50%;
+	height: 70%;
+	border-radius: 50%;
+} 
+
+.ear {
+    width: 60%;
+    height: 70%;
+    top: -16%;
+    left: -4%;
     border-radius: 90% 0 90% 0;
-    background: rgb(64, 124, 213);
-    height: 100px;
-    width: 100px;
-    position: absolute;
+    transform: rotate(100deg);
+    overflow: hidden;
+    box-shadow: inset -14.5vmin 0 var(--fur);
+    /* overflow: hidden; */
+    z-index: -1;
 }
 
-.left_ear {
-    transform: scale(1,-1) rotate(0deg);
-    left: 0;
+.ear + .ear {
+    transform: scaleX(-1) rotate(100deg);
+    left: 44%;
+    top: -16%;
 }
 
+.body {
+    height: 31%;
+    width: 8%;
+    background: var(--shirt);
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+    
+.body::before {
+    width: 30%;
+    height: 100%;
+    left: -20%;
+    background: var(--shirt);
+    transform: skewX(-3deg);
+    transform-origin: bottom right;
+}
+    
+.body::after {
+    width: 30%;
+    height: 100%;
+    right: -20%;
+    background: var(--shirt);
+    transform: skewX(3deg);
+    transform-origin: bottom left;
+}
 
-.right_ear {
-    left: 100px;
+.shorts {
+    width: 10%;
+    height: 5%;
+    background: var(--pants);
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+    
+.shorts::before {
+    width: 60%;
+    height: 490%;
+    background: var(--pants);
+    transform-origin: top left;
+    transform: skewX(-5deg)
+}
+    
+.shorts::after {
+    right: 0;
+    width: 60%;
+    height: 490%;
+    background: var(--pants);
+    transform-origin: top right;
+    transform: skewX(5deg)
+}
+    
+.shoe {
+    width: 9%;
+    height: 4%;
+    background: var(--fur);
+    border-radius: 100% 50% 0 0;
+    bottom: 0;
+    left: 40%;
+    transform: skewX(-3deg);
+}
+    
+.shoe + .shoe {
+    left: auto;
+    right: 40%;
+    transform: scaleX(-1) skewX(-3deg);
+}
+    
+.sleeves {
+    width: 7%;
+    height: 7%;
+    background: var(--shirt);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+    
+.sleeves::before,
+.sleeves::after {
+    width: 100%;
+    height: 200%;
+    background: var(--shirt);
+    transform: rotate(30deg);
+    left: -50%;
+    top: -20%;
+}
+    
+.sleeves::after {
+    transform: rotate(-40deg);
+    left: 50%;
+}
+    
+.arms {
+    width: 23%;
+    height: 30%;
+    border: 3vmin solid var(--fur);
+    border-bottom: 2vmin solid transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+    
+.arms::after {
+    width: 4.8vmin;
+    height: 4.8vmin;
+    background: var(--fur);
+    border-radius: 50%;
+    top: 82%;
+    left: 70%;
+}
+    
+.hands {
+    width: 6%;
+    height: 6%;
+    background: var(--fur);
+    top: 73%;
+    left: 42%;
+}    
+
+/* Media Query: Smartphones or Tablets */
+@media screen and (max-width: 1000px) {
+    .quote-container {
+        margin: auto 10px;
+    }
+
+    .quote-text {
+        font-size: 2.5rem;
+    }
 }
